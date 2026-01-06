@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import logo from '../../assets/sr-email-logo.png';
 import foodHero from '../../assets/Spiced-roots-food.jpeg';
+import creativePulseImg from '../../assets/spiced-roots-art-1767731001424.png';
+import islandSoulImg from '../../assets/spiced-roots-art-1767731420210.png';
 
 interface NewsletterProps {
   onReserveClick: () => void;
@@ -103,7 +105,7 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
               </div>
               <div className="h-40 rounded-3xl overflow-hidden shadow-lg mt-auto">
                 <ImageWithFallback
-                  src="C:/Users/clinz/.gemini/antigravity/brain/529c934c-d61f-452b-8341-afb30b8d755b/sip_and_paint_caribbean_1767726766756.png"
+                  src={creativePulseImg}
                   alt="Sip and Paint"
                   className="w-full h-full object-cover"
                 />
@@ -122,7 +124,7 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
               </div>
               <div className="h-40 rounded-3xl overflow-hidden shadow-lg mt-auto">
                 <ImageWithFallback
-                  src={foodHero}
+                  src={islandSoulImg}
                   alt="Afternoon Food"
                   className="w-full h-full object-cover"
                 />
