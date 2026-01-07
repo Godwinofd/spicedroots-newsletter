@@ -169,7 +169,7 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
               </div>
 
               <p className="text-lg text-[#2C2416]/80 leading-relaxed font-medium text-center italic">
-                We'll share details properly as they land, but we wanted to start the year by inviting you into something special with Martin Jay on Sunday, 25th January.
+                We'll share more details soon, but we hope you'll join us for something special with Martin Jay on Sunday, 25th January.
               </p>
             </div>
           </div>
@@ -178,111 +178,107 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
           <div className="mb-24 text-center max-w-2xl mx-auto px-4">
             <div className="h-px w-24 bg-[#D1BB94]/30 mx-auto mb-10"></div>
             <p className="text-xl md:text-2xl text-[#42657D] font-medium italic leading-relaxed">
-              "To start this year of celebrations, we’re inviting you into something special this Sunday."
+              "To start this year of celebrations, we’re inviting you into something special this Sunday, 11th January."
             </p>
           </div>
 
           {/* Invitation Section */}
-          <div className="mb-24 space-y-12">
-            <div className="text-center space-y-4">
-              <h3 className="text-3xl md:text-4xl text-[#42657D] font-black tracking-tight">An Invitation This Sunday</h3>
-              <p className="text-[#2C2416]/60 font-medium">Capture the energy with us</p>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Sitting 1: Sip & Paint */}
-              <motion.div
-                whileHover={{ y: -5 }}
-                className="bg-white rounded-[2.5rem] p-8 border border-[#D1BB94]/30 shadow-xl flex flex-col justify-between"
-              >
-                <div>
-                  <span className="bg-[#42657D] text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 inline-block">12 PM - 2:30 PM</span>
-                  <h3 className="text-2xl text-[#42657D] font-black mb-4 leading-none uppercase">The Creative Pulse</h3>
-                  <p className="text-[#2C2416]/70 mb-8 font-medium text-sm">Sip, paint, and connect in a relaxed, guided session capturing our island heritage through art.</p>
-                </div>
-                <div className="h-40 rounded-3xl overflow-hidden mt-auto">
-                  <ImageWithFallback src={creativePulseImg} alt="Sip and Paint" className="w-full h-full object-cover" />
-                </div>
-              </motion.div>
 
-              {/* Sitting 2: Food & Vibes */}
-              <motion.div
-                whileHover={{ y: -5 }}
-                className="bg-white rounded-[2.5rem] p-8 border border-[#42657D]/30 shadow-xl flex flex-col justify-between"
-              >
-                <div>
-                  <span className="bg-[#FEB47B] text-[#2F4A5C] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 inline-block">3 PM - CLOSE</span>
-                  <h3 className="text-2xl text-[#42657D] font-black mb-4 leading-none uppercase">The Island Soul</h3>
-                  <p className="text-[#2C2416]/70 mb-8 font-medium text-sm">The ultimate Caribbean feast. Signature dishes, cocktails, and authentic community vibes.</p>
-                </div>
-                <div className="h-40 rounded-3xl overflow-hidden mt-auto">
-                  <ImageWithFallback src={islandSoulImg} alt="Afternoon Food" className="w-full h-full object-cover" />
-                </div>
-              </motion.div>
-            </div>
-          </div>
-
-          {/* Trust Section - Lighter, softer */}
-          <div className="mb-24 bg-[#42657D]/3 rounded-[2.5rem] p-8 md:p-12">
-            <div className="max-w-xl mx-auto text-center space-y-6">
-              <h3 className="text-xl font-black text-[#42657D] uppercase tracking-wider opacity-90">Real People. Real Energy.</h3>
-              <div className="space-y-4 text-[#2C2416]/70 text-base md:text-lg leading-relaxed font-medium">
-                <p>
-                  We're hosting this content day to capture authentic moments that reflect the Spiced Roots spirit.
-                </p>
-                <p>
-                  No staged sets or models—just our community doing what they do best: enjoying good food and even better company.
-                </p>
-                <p className="text-sm italic opacity-60 pt-4">
-                  *Your registration helps us manage sittings and dietary needs respectfully.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Sitting 1: Sip & Paint */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-[2.5rem] p-8 border border-[#D1BB94]/30 shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <span className="bg-[#42657D] text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 inline-block">12 PM - 2:30 PM</span>
+                <h3 className="text-2xl text-[#42657D] font-black mb-4 leading-none uppercase">The Creative Pulse</h3>
+                <p className="text-[#2C2416]/70 mb-8 font-medium text-sm">Sip, paint, and connect in a relaxed, guided session capturing our island heritage through art.</p>
               </div>
-            </div>
+              <div className="h-40 rounded-3xl overflow-hidden mt-auto">
+                <ImageWithFallback src={creativePulseImg} alt="Sip and Paint" className="w-full h-full object-cover" />
+              </div>
+            </motion.div>
+
+            {/* Sitting 2: Food & Vibes */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-[2.5rem] p-8 border border-[#42657D]/30 shadow-xl flex flex-col justify-between"
+            >
+              <div>
+                <span className="bg-[#FEB47B] text-[#2F4A5C] px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 inline-block">3 PM - CLOSE</span>
+                <h3 className="text-2xl text-[#42657D] font-black mb-4 leading-none uppercase">The Island Soul</h3>
+                <p className="text-[#2C2416]/70 mb-8 font-medium text-sm">The ultimate Caribbean feast. Signature dishes, cocktails, and authentic community vibes.</p>
+              </div>
+              <div className="h-40 rounded-3xl overflow-hidden mt-auto">
+                <ImageWithFallback src={islandSoulImg} alt="Afternoon Food" className="w-full h-full object-cover" />
+              </div>
+            </motion.div>
           </div>
+        </div>
 
-          {/* CTA - Vibrant & Premium */}
-          <div className="text-center space-y-10 py-16 px-8 bg-gradient-to-br from-[#42657D] to-[#2F4A5C] rounded-[3.5rem] shadow-3xl relative overflow-hidden">
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#FEB47B] rounded-full blur-3xl" />
-            </div>
-
-            <div className="relative z-10">
-              <h3 className="text-4xl font-black text-white mb-4 tracking-tight">BE PART OF THE LEGACY</h3>
-              <p className="text-[#D1BB94] text-lg max-w-sm mx-auto mb-10 font-medium">
-                Reserve one of the 20 exclusive spots for this landmark occasion.
+        {/* Trust Section - Lighter, softer */}
+        <div className="mb-24 bg-[#42657D]/3 rounded-[2.5rem] p-8 md:p-12">
+          <div className="max-w-xl mx-auto text-center space-y-6">
+            <h3 className="text-xl font-black text-[#42657D] uppercase tracking-wider opacity-90">Real People. Real Energy.</h3>
+            <div className="space-y-4 text-[#2C2416]/70 text-base md:text-lg leading-relaxed font-medium">
+              <p>
+                We're hosting this content day to capture authentic moments that reflect the Spiced Roots spirit.
               </p>
-              <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}
-                whileTap={{ scale: 0.95 }}
-                onClick={onReserveClick}
-                className="bg-[#FEB47B] text-[#2F4A5C] px-16 py-6 rounded-full text-2xl font-black shadow-2xl transition-all duration-300"
-              >
-                Reserve Now
-              </motion.button>
+              <p>
+                No staged sets or models—just our community doing what they do best: enjoying good food and even better company.
+              </p>
+              <p className="text-sm italic opacity-60 pt-4">
+                *Your registration helps us manage sittings and dietary needs respectfully.
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Footer */}
-        <footer className="bg-[#1A2A33] px-8 py-20 text-center text-white">
-          <img src={logo} alt="Logo" className="h-20 w-auto mx-auto mb-8 opacity-60 grayscale brightness-200" />
-
-          <div className="flex justify-center gap-6 mb-12">
-            <a href="https://instagram.com/spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#D1BB94]/40 hover:text-[#FEB47B] transition-colors">
-              <Instagram size={24} strokeWidth={1.5} />
-            </a>
-            <a href="https://facebook.com/spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#D1BB94]/40 hover:text-[#FEB47B] transition-colors">
-              <Facebook size={24} strokeWidth={1.5} />
-            </a>
-            <a href="https://tiktok.com/@spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#D1BB94]/40 hover:text-[#FEB47B] transition-colors">
-              <TikTokIcon size={24} strokeWidth={1.5} />
-            </a>
+        {/* CTA - Vibrant & Premium */}
+        <div className="text-center space-y-10 py-16 px-8 bg-gradient-to-br from-[#42657D] to-[#2F4A5C] rounded-[3.5rem] shadow-3xl relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#FEB47B] rounded-full blur-3xl" />
           </div>
 
-          <p className="text-[#D1BB94]/40 uppercase tracking-[0.4em] text-[10px] font-black mb-8">Est. 2016 • Oxford, UK</p>
-          <div className="h-px w-16 bg-[#D1BB94]/10 mx-auto" />
-        </footer>
+          <div className="relative z-10">
+            <h3 className="text-4xl font-black text-white mb-4 tracking-tight">BE PART OF THE LEGACY</h3>
+            <p className="text-[#D1BB94] text-lg max-w-sm mx-auto mb-10 font-medium">
+              Reserve one of the 20 exclusive spots for this landmark occasion.
+            </p>
+            <motion.button
+              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}
+              whileTap={{ scale: 0.95 }}
+              onClick={onReserveClick}
+              className="bg-[#FEB47B] text-[#2F4A5C] px-16 py-6 rounded-full text-2xl font-black shadow-2xl transition-all duration-300"
+            >
+              Reserve Now
+            </motion.button>
+          </div>
+        </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-[#1A2A33] px-8 py-20 text-center text-white">
+        <img src={logo} alt="Logo" className="h-20 w-auto mx-auto mb-8 opacity-60 grayscale brightness-200" />
+
+        <div className="flex justify-center gap-6 mb-12">
+          <a href="https://instagram.com/spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#D1BB94]/40 hover:text-[#FEB47B] transition-colors">
+            <Instagram size={24} strokeWidth={1.5} />
+          </a>
+          <a href="https://facebook.com/spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#D1BB94]/40 hover:text-[#FEB47B] transition-colors">
+            <Facebook size={24} strokeWidth={1.5} />
+          </a>
+          <a href="https://tiktok.com/@spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#D1BB94]/40 hover:text-[#FEB47B] transition-colors">
+            <TikTokIcon size={24} strokeWidth={1.5} />
+          </a>
+        </div>
+
+        <p className="text-[#D1BB94]/40 uppercase tracking-[0.4em] text-[10px] font-black mb-8">Est. 2016 • Oxford, UK</p>
+        <div className="h-px w-16 bg-[#D1BB94]/10 mx-auto" />
+      </footer>
     </div>
+    </div >
   );
 }
