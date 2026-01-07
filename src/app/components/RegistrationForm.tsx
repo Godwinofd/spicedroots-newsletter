@@ -1,10 +1,29 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../../assets/sr-email-logo.png';
+import { Instagram, Facebook } from 'lucide-react';
+import logo from '../../assets/logo2.png';
 
 interface RegistrationFormProps {
   onBack: () => void;
 }
+
+// Custom TikTok icon to match Lucide style
+const TikTokIcon = ({ size = 24, strokeWidth = 1.5, className = "" }: { size?: number, strokeWidth?: number, className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 export function RegistrationForm({ onBack }: RegistrationFormProps) {
   const [formData, setFormData] = useState({
@@ -61,7 +80,8 @@ export function RegistrationForm({ onBack }: RegistrationFormProps) {
                 </button>
 
                 <div className="relative z-10 text-center mt-4">
-                  <img src={logo} alt="Logo" className="h-24 w-auto mx-auto mb-2" />
+                  <img src={logo} alt="Logo" className="h-32 w-auto mx-auto mb-4 drop-shadow-xl" />
+                  <p className="text-[#D1BB94] font-bold tracking-[0.3em] text-[10px] uppercase mb-2">Sunday 11/01/2026</p>
                   <h1 className="text-3xl text-white font-black tracking-tighter">RESERVE YOUR SPACE</h1>
                 </div>
               </div>
@@ -186,6 +206,22 @@ export function RegistrationForm({ onBack }: RegistrationFormProps) {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* Footer */}
+        <footer className="mt-16 py-8 text-center">
+          <div className="flex justify-center gap-6 mb-8">
+            <a href="https://instagram.com/spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#42657D]/30 hover:text-[#42657D] transition-colors">
+              <Instagram size={20} strokeWidth={2} />
+            </a>
+            <a href="https://facebook.com/spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#42657D]/30 hover:text-[#42657D] transition-colors">
+              <Facebook size={20} strokeWidth={2} />
+            </a>
+            <a href="https://tiktok.com/@spicedroots" target="_blank" rel="noopener noreferrer" className="text-[#42657D]/30 hover:text-[#42657D] transition-colors">
+              <TikTokIcon size={20} strokeWidth={2} />
+            </a>
+          </div>
+          <p className="text-[#42657D]/30 uppercase tracking-[0.4em] text-[9px] font-black">Est. 2016 • Oxford, UK</p>
+        </footer>
       </div>
     </div>
   );
