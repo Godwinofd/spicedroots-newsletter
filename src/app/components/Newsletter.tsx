@@ -169,7 +169,7 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
               </div>
 
               <p className="text-lg text-[#2C2416]/80 leading-relaxed font-medium text-center italic">
-                We'll share details properly as they land, but we wanted to start the year by inviting you into something special on Sunday, 25th January.
+                We'll share details properly as they land, but we wanted to start the year by inviting you into something special with Martin Jay on Sunday, 25th January.
               </p>
             </div>
           </div>
@@ -178,14 +178,14 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
           <div className="mb-24 text-center max-w-2xl mx-auto px-4">
             <div className="h-px w-24 bg-[#D1BB94]/30 mx-auto mb-10"></div>
             <p className="text-xl md:text-2xl text-[#42657D] font-medium italic leading-relaxed">
-              "To start this year of celebrations, we’re inviting you into something special on Sunday, 25th January."
+              "To start this year of celebrations, we’re inviting you into something special this Sunday."
             </p>
           </div>
 
           {/* Invitation Section */}
           <div className="mb-24 space-y-12">
             <div className="text-center space-y-4">
-              <h3 className="text-3xl md:text-4xl text-[#42657D] font-black tracking-tight">An Invitation for 25th January</h3>
+              <h3 className="text-3xl md:text-4xl text-[#42657D] font-black tracking-tight">An Invitation This Sunday</h3>
               <p className="text-[#2C2416]/60 font-medium">Capture the energy with us</p>
             </div>
 
