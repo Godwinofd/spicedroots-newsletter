@@ -112,17 +112,17 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
                   Happy New Year ❤️
                 </p>
                 <p className="text-lg text-[#2C2416]/80 leading-relaxed font-medium">
-                  We hope you managed to rest, eat well, and enjoy time with the people around you. As we step into the new year, we wanted to share something special.
+                  We hope you managed to rest, eat well and enjoy time with the people around you. As we step into the new year, we wanted to share something special.
                 </p>
               </div>
             </div>
 
             <div className="bg-[#D1BB94]/5 border-l-2 border-[#D1BB94]/50 p-6 md:p-8 rounded-r-2xl space-y-4 backdrop-blur-sm">
               <p className="text-lg text-[#2C2416]/80 leading-relaxed font-medium">
-                <span className="font-bold text-[#42657D]">2025 is our 10th year at Spiced Roots.</span> Ten years of cooking the food we grew up on, welcoming people like family, and building something rooted in Caribbean culture right here in Oxford.
+                <span className="font-bold text-[#42657D]">2026 is our 10th year at Spiced Roots.</span> Ten years of cooking the food we grew up on, welcoming people like family and building something rooted in Caribbean culture right here in Oxford.
               </p>
               <p className="text-lg text-[#2C2416]/80 leading-relaxed font-medium">
-                We're proud of how far we've come, and this year we'll be celebrating throughout — with food, music, culture and community at the centre of it all.
+                We're proud of how far we've come and this year we'll be celebrating throughout — with food, music, culture and community at the centre of it all.
               </p>
             </div>
 
@@ -169,7 +169,7 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
               </div>
 
               <p className="text-lg text-[#2C2416]/80 leading-relaxed font-medium text-center italic">
-                We'll share details properly as they land, but we wanted to start the year by inviting you into something a little different.
+                We'll share details properly as they land, but we wanted to start the year by inviting you into something special on Sunday, 25th January.
               </p>
             </div>
           </div>
@@ -178,14 +178,14 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
           <div className="mb-24 text-center max-w-2xl mx-auto px-4">
             <div className="h-px w-24 bg-[#D1BB94]/30 mx-auto mb-10"></div>
             <p className="text-xl md:text-2xl text-[#42657D] font-medium italic leading-relaxed">
-              "To start this year of celebrations, we’re inviting you into something special this Sunday."
+              "To start this year of celebrations, we’re inviting you into something special on Sunday, 25th January."
             </p>
           </div>
 
           {/* Invitation Section */}
           <div className="mb-24 space-y-12">
             <div className="text-center space-y-4">
-              <h3 className="text-3xl md:text-4xl text-[#42657D] font-black tracking-tight">An Invitation This Sunday</h3>
+              <h3 className="text-3xl md:text-4xl text-[#42657D] font-black tracking-tight">An Invitation for 25th January</h3>
               <p className="text-[#2C2416]/60 font-medium">Capture the energy with us</p>
             </div>
 
