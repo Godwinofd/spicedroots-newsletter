@@ -33,7 +33,9 @@ export function RegistrationForm({ onBack }: RegistrationFormProps) {
     ageRange: '',
     dietary: '',
     spiceLevel: '',
+
     culturalBackground: '',
+    photo: null as File | null,
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -44,10 +46,18 @@ export function RegistrationForm({ onBack }: RegistrationFormProps) {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    if (e.target.type === 'file') {
+      const fileInput = e.target as HTMLInputElement;
+      setFormData({
+        ...formData,
+        photo: fileInput.files ? fileInput.files[0] : null,
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    }
   };
 
   return (
@@ -160,6 +170,21 @@ export function RegistrationForm({ onBack }: RegistrationFormProps) {
                   </div>
                 </div>
 
+                <div className="group">
+                  <label className="block text-[#42657D] text-[10px] font-black uppercase tracking-[0.2em] mb-3 ml-1">Your Photo (Optional)</label>
+                  <div className="relative">
+                    <input
+                      type="file"
+                      name="photo"
+                      accept="image/*"
+                      onChange={handleChange}
+                      className="w-full px-6 py-4 bg-[#F8F6F0] border-2 border-transparent focus:border-[#D1BB94]/30 rounded-2xl focus:ring-0 text-[#2C2416] font-semibold transition-all file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-black file:uppercase file:tracking-widest file:bg-[#42657D]/10 file:text-[#42657D] hover:file:bg-[#42657D]/20 cursor-pointer text-sm"
+                    />
+                  </div>
+                  <p className="mt-2 ml-1 text-xs text-[#2C2416]/40 font-medium">So we can put a face to the name when you arrive.</p>
+                </div>
+
+
                 <motion.button
                   whileHover={{ scale: 1.02, backgroundColor: "#2F4A5C" }}
                   whileTap={{ scale: 0.98 }}
@@ -223,6 +248,6 @@ export function RegistrationForm({ onBack }: RegistrationFormProps) {
           <p className="text-[#42657D]/30 uppercase tracking-[0.4em] text-[9px] font-black">Est. 2016 • Oxford, UK</p>
         </footer>
       </div>
-    </div>
+    </div >
   );
 }

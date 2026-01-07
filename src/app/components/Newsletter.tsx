@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook, Ticket, Radio, Martini, Palette } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import logo from '../../assets/logo2.png';
 import foodHero from '../../assets/hero.jpg';
@@ -131,14 +131,20 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center max-w-4xl mx-auto">
                 {[
-                  { label: "Live Events", icon: "🎨" },
-                  { label: "Radio Sets", icon: "📻" },
-                  { label: "Rum Classes", icon: "🥃" },
-                  { label: "Sip & Paint", icon: "🍷" }
+                  { label: "Live Events", icon: Ticket, color: "#FF7E5F" },
+                  { label: "Radio Sets", icon: Radio, color: "#42657D" },
+                  { label: "Rum Classes", icon: Martini, color: "#F59E0B" },
+                  { label: "Sip & Paint", icon: Palette, color: "#D97706" }
                 ].map((item, i) => (
-                  <div key={i} className="group cursor-default">
-                    {/* Icons colored by default, slightly muted to fit brand (opacity-90), full color on hover */}
-                    <div className="text-2xl mb-3 opacity-90 hover:scale-110 transition-all duration-300">{item.icon}</div>
+                  <div key={i} className="group cursor-default flex flex-col items-center">
+                    {/* Icons colored by default with specific hue, full opacity on hover */}
+                    <div className="relative mb-3 transition-transform duration-300 group-hover:scale-110">
+                      <item.icon
+                        className="w-8 h-8 transition-colors duration-300"
+                        style={{ color: item.color }}
+                        strokeWidth={1.5}
+                      />
+                    </div>
                     <div className="text-xs font-black uppercase tracking-widest text-[#42657D] group-hover:text-[#D1BB94] transition-colors">{item.label}</div>
                   </div>
                 ))}
@@ -169,7 +175,7 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
               </div>
 
               <p className="text-lg text-[#2C2416]/80 leading-relaxed font-medium text-center italic">
-                We'll share more details soon, but we hope you'll join us for something special with Martin Jay on Sunday, 25th January.
+                We'll share more details soon but we hope you'll join us for something special with Martin Jay on Sunday, 25th January.
               </p>
             </div>
           </div>
@@ -218,6 +224,7 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
           </div>
         </div>
 
+
         {/* Trust Section - Lighter, softer */}
         <div className="mb-24 bg-[#42657D]/3 rounded-[2.5rem] p-8 md:p-12">
           <div className="max-w-xl mx-auto text-center space-y-6">
@@ -243,9 +250,9 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
           </div>
 
           <div className="relative z-10">
-            <h3 className="text-4xl font-black text-white mb-4 tracking-tight">BE PART OF THE LEGACY</h3>
+            <h3 className="text-4xl font-black text-white mb-4 tracking-tight">DONT MISS OUT!</h3>
             <p className="text-[#D1BB94] text-lg max-w-sm mx-auto mb-10 font-medium">
-              Reserve one of the 20 exclusive spots for this landmark occasion.
+              Reserve one of the 20 exclusive spots for this occasion.
             </p>
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}
@@ -279,6 +286,5 @@ export function Newsletter({ onReserveClick }: NewsletterProps) {
         <div className="h-px w-16 bg-[#D1BB94]/10 mx-auto" />
       </footer>
     </div>
-    </div >
   );
 }
